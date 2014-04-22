@@ -26,6 +26,15 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+#using authlogic for authentication, the latest version of authlogic requires both bcrypt and scrypt for encryption
+gem 'authlogic'
+gem 'bcrypt', '~> 3.1.7'
+gem 'scrypt'
+
+#using mongoid mapper for MongoDB
+gem 'mongoid', github: 'mongoid/mongoid'
+gem 'bson_ext'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
